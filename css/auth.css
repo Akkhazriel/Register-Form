@@ -1,0 +1,104 @@
+/* CSS для авторизации */
+
+@import url(reset.css);
+
+/* GENERAL */
+
+body {
+    background-color: #F56C98;
+    box-sizing: border-box;
+}
+
+/* AUTHORISATION */
+
+.authorisation {
+    padding-top: 8%;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.auth__block {
+    -webkit-box-shadow: 0px 5px 17px 2px rgba(4, 56, 96, 0.59);
+    -moz-box-shadow: 0px 5px 17px 2px rgba(4, 56, 96, 0.59);
+    box-shadow: 0px 5px 17px 2px rgba(4, 56, 96, 0.59);
+    background: rgb(11,7,84);
+    background: linear-gradient(90deg, rgba(11,7,84,1) 0%, rgba(102,96,148,1) 50%, rgba(12,7,83,1) 100%);
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__form {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* INPUTS */
+
+.auth__inp {
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 250px;
+    background-color: #505B88;
+    margin-bottom: 12px;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: #FFF;
+}
+
+
+/* BTNS */
+
+.btn__auth {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #F56C98;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFF;
+
+    transition: all 0.8s ease-in-out;
+}
+
+.btn__auth:active,
+.btn__auth:focus,
+.btn__auth:hover {
+    background-color: #dd2a62;
+}
+
+.btn__link {
+    margin-bottom: 8%;
+    width: 200px;
+    background-color: #F56C98;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+    color: #FFF;
+    
+
+    transition: all 0.8s ease-in-out;
+}
+
+.btn__link:active,
+.btn__link:focus,
+.btn__link:hover {
+    background-color: #dd2a62;
+}
+
+/* CONTENT */
+
+.auth__content h1 {
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    color: #F56C98;
+    font-size: 22px;
+}

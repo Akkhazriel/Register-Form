@@ -1,0 +1,158 @@
+/* CSS для регистрации */
+
+@import url(reset.css);
+
+/* GENERAL */
+
+body {
+    background-color: #F56C98;
+    box-sizing: border-box;
+}
+
+.register {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* REGISTER FORM */
+
+.reg__block {
+    -webkit-box-shadow: 0px 5px 17px 2px rgba(4, 56, 96, 0.59);
+    -moz-box-shadow: 0px 5px 17px 2px rgba(4, 56, 96, 0.59);
+    box-shadow: 0px 5px 17px 2px rgba(4, 56, 96, 0.59);
+    background: rgb(11,7,84);
+    background: linear-gradient(90deg, rgba(11,7,84,1) 0%, rgba(102,96,148,1) 50%, rgba(12,7,83,1) 100%);
+    margin-top: 12%;
+    display: flex;
+    flex-direction: row;
+}
+
+.register__block {
+    width: 50%;
+}
+
+.reg__form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* INPUTS */
+
+.login__email {
+    margin-top: 35px;
+}
+
+.reg__input:first-child {
+    margin-right: 10px;
+}
+
+.reg__input {
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 250px;
+    background-color: #505B88;
+    margin-bottom: 12px;
+}
+
+.reg__input-photo {
+    color: transparent;
+}
+
+.reg__input-photo::file-selector-button {
+    visibility: hidden;
+}   
+
+.reg__input-photo::before {
+    font-weight: bold;
+    margin-left: 50px;
+    content: 'Выбрать файл';
+    color: #FFF;
+    display: inline-block;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: #FFF;
+}
+
+input[type=date]:invalid::-webkit-datetime-edit {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* BTNS */
+
+.btn__reg {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #F56C98;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #FFF;
+
+    transition: all 0.8s ease-in-out;
+}
+
+.btn__reg:active,
+.btn__reg:focus,
+.btn__reg:hover {
+    background-color: #dd2a62;
+}
+
+.btn__link {
+    margin-bottom: 2%;
+    width: 200px;
+    background-color: #F56C98;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+/* CONTENT */
+
+.reg__form-text {
+    margin-top: 50px;
+    margin-right: 200px;
+    width: 300px;
+}
+.reg__form-text h1 {
+    font-weight: bold;
+    color: #F56C98;
+    font-size: 32px;
+}
+
+.reg__form-text p {
+    padding-top: 5px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.register__about {
+    padding-left: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.register__desc {
+    font-size: 18px;
+    color: #FFF;
+    width: 600px;
+}
+
+.register__desc span {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    display: block;
+    color: #F56C98;
+    font-weight: bold;
+    font-size: 28px;
+}

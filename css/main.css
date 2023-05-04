@@ -1,0 +1,77 @@
+/* CSS для профиля */
+
+@import url(reset.css);
+
+/* GENERAL */
+
+body {
+    background-color: #F56C98;
+}
+
+.profile {
+    max-width: 700px;
+    height: 100vh;
+    -webkit-box-shadow: 0px 5px 17px 2px rgba(4, 56, 96, 0.59);
+    -moz-box-shadow: 0px 5px 17px 2px rgba(4, 56, 96, 0.59);
+    box-shadow: 0px 5px 17px 2px rgba(4, 56, 96, 0.59);
+    background: rgb(11,7,84);
+    background: linear-gradient(90deg, rgba(11,7,84,1) 0%, rgba(102,96,148,1) 50%, rgba(12,7,83,1) 100%);
+}
+
+/* PROFILE CONTENT */
+
+.profile__content {
+    padding-top: 2%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__content h1, p {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.profile__content h1 {
+    font-size: 32px;
+    color: #F56C98;
+}
+
+.profile__content p {
+    padding-top: 2%;
+    font-size: 18px;
+}
+
+.profile__content img {
+    background-color: #ababab;
+    border-radius: 8px;
+    padding-top: 2%;
+    width: 300px;
+}
+
+.profile__content a {
+    border-radius: 4px;
+    margin-top: 4%;
+    padding: 10px 20px;
+    background-color: #F56C98;
+    color: #FFF;
+    width: 250px;
+
+    transition: all 0.8s ease-in-out;
+}
+
+.profile__content a:active,
+.profile__content a:focus,
+.profile__content a:hover {
+    background-color: #dd2a62;
+}
+
+.profile h1 {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+a {
+    color: #F56C98;
+}
